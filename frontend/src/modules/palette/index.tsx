@@ -18,6 +18,7 @@ import {
   PaletteGenerate,
   TopSeller,
 } from "./components";
+import { Tooltip } from "react-tooltip";
 
 const Palette = ({
   params: { id },
@@ -93,7 +94,7 @@ const Palette = ({
                     style={{ backgroundColor: fullData?.secondary?.[200] }}
                     className={`flex items-center flex-wrap flex-1 gap-3 min-[420px]:p-7 p-3 rounded-3xl mt-8`}
                   >
-                    <div className="w-full md:max-w-4xl mx-auto">
+                    <div className="w-full md:max-w-4xl mx-auto relative">
                       <div className="flex md:space-x-4 flex-col md:flex-row items-center md:items-end mb-5 w-full">
                         <Chat color={fullData} />
                         <div className="flex flex-col max-[420px]:w-full space-y-4">
